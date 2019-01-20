@@ -1,0 +1,58 @@
+:host {
+    section.has-items {
+        margin-bottom: 50px;
+    }
+    section.no-items {
+        margin-bottom: 20px;
+    }
+    ::ng-deep {
+        h2 {
+            font: {
+                size: var(--font-size);
+                weight: 500;
+            }
+            color: var(--secondary);
+            letter-spacing: 0.6px;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                cursor: default;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+
+                i {
+                    display: flex;
+                    margin-right: 24px;
+                }
+                * {
+                    font: {
+                        size: 14px;
+                        weight: 400;
+                    }
+                    color: #32486C;
+                    letter-spacing: 0.6px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                &:hover, &.isActive {
+                    svg {
+                        g, use {
+                            fill: var(--accent);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

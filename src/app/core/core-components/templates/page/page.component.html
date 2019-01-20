@@ -1,0 +1,10 @@
+<section>
+  <header *ngIf="(activeRoute$ | async) as activeRoute">
+    <h1>{{activeRoute.label}}</h1>
+  </header>
+  <div class="page-contents">
+    <ng-content>
+
+    </ng-content>
+  </div>
+</section>
