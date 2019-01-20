@@ -1,0 +1,22 @@
+<aside *ngIf="(sections$ | async) as sections">
+  <i class="logo">
+    Concentino
+  </i>
+    <nav>
+      <ng-template ngFor let-section [ngForOf]="sections">
+        <sidebar-section >
+            <h2>{{section.section_title}}</h2>
+            <ul>
+            <ng-template ngFor let-navItem [ngForOf]="section.nav_items">
+              <li (click)="onRoute(navItem.route)">
+                <i [innerHTML]="sanitizeSvg(navItem.icon)">
+                </i>
+                <h3>{{navItem.label}}</h3>
+              </li>
+            </ng-template>
+          </ul>
+          </sidebar-section>
+      </ng-template>
+
+    </nav>
+</aside>
