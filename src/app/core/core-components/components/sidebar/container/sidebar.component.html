@@ -1,0 +1,26 @@
+<aside *ngIf="(sections$ | async) as sections">
+  <i class="logo">
+    Concentino
+  </i>
+    <nav>
+      <ng-template ngFor let-section [ngForOf]="sections">
+        <sidebar-section [class_name]="{
+          'has-items': section.nav_items.length >= 1,
+          'no-items': section.nav_items.length === 0
+        }" >
+            <h2>{{section.section_title}}</h2>
+            <ul>
+            <ng-template ngFor let-navItem [ngForOf]="section.nav_items">
+              <li (click)="onRoute(navItem.route)" [class.isActive]="navItem.active">
+                <i [innerHTML]="sanitizeSvg(navItem.icon)">
+                </i>
+                <h3>{{navItem.label}}</h3>
+              </li>
+            </ng-template>
+          </ul>
+          </sidebar-section>
+      </ng-template>
+      <concentino-add-playlist-btn></concentino-add-playlist-btn>
+
+    </nav>
+</aside>

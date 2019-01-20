@@ -6,7 +6,7 @@ export const SidebarNavigation: SidebarNavigationInterface[] = [
         section_title: 'Browse Music',
         nav_items: [
             {
-                active: false,
+                active: true,
                 icon: 'home',
                 label: 'Home',
                 route: '',
@@ -57,7 +57,25 @@ export const SidebarNavigation: SidebarNavigationInterface[] = [
                 icon: 'history',
                 label: 'History',
                 route: 'history',
-            }
+            },
+            {
+                active: false,
+                icon: 'artist',
+                label: 'Artists',
+                route: 'artists',
+            },
+            {
+                active: false,
+                icon: 'album',
+                label: 'Albums',
+                route: 'albums',
+            },
+            {
+                active: false,
+                icon: 'song',
+                label: 'Songs',
+                route: 'songs',
+            },
         ]
     },
     {
@@ -95,7 +113,8 @@ export const ConcentinoIcons = {
         </g>
         </svg>
     `},
-    'recommendations':  function() { return`
+    'recommendations':  function() { 
+        return`
         <svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Macbook-pro-15" transform="translate(-26.000000, -204.000000)" fill="#32486C">
@@ -116,7 +135,8 @@ export const ConcentinoIcons = {
             </g>
         </svg>
     `},
-    'new-releases':  function() { return `
+    'new-releases':  function() { 
+        return `
         <svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Macbook-pro-15" transform="translate(-27.000000, -248.000000)" fill="#32486C">
@@ -135,7 +155,8 @@ export const ConcentinoIcons = {
             </g>
         </svg>
     `},
-    'top-charts':  function() { return`
+    'top-charts':  function() { 
+        return `
         <svg width="20px" height="11px" viewBox="0 0 20 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Macbook-pro-15" transform="translate(-26.000000, -296.000000)" fill="#32486C">
@@ -154,7 +175,8 @@ export const ConcentinoIcons = {
             </g>
         </svg>
     `},
-    'radio':  function() { return`
+    'radio':  function() { 
+        return `
         <svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Macbook-pro-15" transform="translate(-26.000000, -336.000000)" fill="#32486C">
@@ -173,7 +195,8 @@ export const ConcentinoIcons = {
             </g>
         </svg>
     `},
-    'feed' :  function() { return`
+    'feed' :  function() { 
+        return `
         <svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Macbook-pro-15" transform="translate(-26.000000, -382.000000)" fill="#32486C">
@@ -192,8 +215,10 @@ export const ConcentinoIcons = {
                     </g>
                 </g>
             </g>
-        </svg>`},
-    'favourites':  function() { return`
+        </svg>`
+    },
+    'favourites':  function() { 
+        return `
         <svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Macbook-pro-15" transform="translate(-26.000000, -499.000000)" fill="#5D6C76">
@@ -214,7 +239,8 @@ export const ConcentinoIcons = {
             </g>
         </svg>
     `},
-    'history':  function() { return`
+    'history':  function() { 
+        return `
         <svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Macbook-pro-15" transform="translate(-26.000000, -542.000000)" fill="#32486C">
@@ -235,7 +261,8 @@ export const ConcentinoIcons = {
             </g>
         </svg>
     `},
-    'playlist':  function() { return`
+    'playlist':  function() { 
+        return `
         <svg width="23px" height="19px" viewBox="0 0 23 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Macbook-pro-15" transform="translate(-25.000000, -778.000000)" fill="#32486C">
@@ -253,5 +280,71 @@ export const ConcentinoIcons = {
                 </g>
             </g>
         </svg>
-    `}
+    `},
+    'artist':  function() { 
+        return `
+        <svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Macbook-pro-15" transform="translate(-26.000000, -586.000000)" fill="#32486C" fill-rule="nonzero">
+                    <g id="navigation/desktop/mainMenu">
+                        <g id="sections" transform="translate(0.000000, 107.000000)">
+                            <g id="section-2" transform="translate(24.000000, 342.000000)">
+                                <g id="sectionElements" transform="translate(2.000000, 49.000000)">
+                                    <g id="Group-23" transform="translate(0.000000, 88.000000)">
+                                        <g id="0718-mic2">
+                                            <path d="M18.9004762,14.6462857 L11.7537619,5.71357143 C11.7582857,5.61947619 11.761,5.52447619 11.761,5.42947619 C11.761,2.43652381 9.32538095,0.000904761905 6.33242857,0.000904761905 C3.33947619,0.000904761905 0.903857143,2.43652381 0.903857143,5.42947619 C0.903857143,7.22271429 1.77785714,8.81509524 3.12233333,9.80490476 C3.14495238,9.82571429 3.16938095,9.84290476 3.19561905,9.85828571 C4.08228571,10.488 5.16438095,10.8580476 6.33152381,10.8580476 C6.42652381,10.8580476 6.52152381,10.8553333 6.61561905,10.8508095 L15.5483333,17.9975238 C15.6297619,18.0626667 15.7292857,18.0970476 15.830619,18.0970476 C15.868619,18.0970476 15.9057143,18.0925238 15.9437143,18.0825714 C16.6458095,17.901619 17.309,17.514381 17.8618095,16.9615714 C18.414619,16.4087619 18.8018571,15.7455714 18.9828095,15.0434762 C19.0180952,14.9059524 18.9864286,14.759381 18.8977619,14.6480952 L18.9004762,14.6462857 Z M1.80952381,5.42857143 C1.80952381,2.93414286 3.83890476,0.904761905 6.33333333,0.904761905 C7.7827619,0.904761905 9.0747619,1.58966667 9.90352381,2.65366667 C9.51719048,5.98047619 6.88252381,8.61333333 3.55842857,8.9987619 C2.49442857,8.17 1.80952381,6.878 1.80952381,5.42857143 Z M4.79614286,9.68366667 C7.62080952,8.93904762 9.84290476,6.7187619 10.5884286,3.89228571 C10.7621429,4.37271429 10.8571429,4.88933333 10.8571429,5.42947619 C10.8571429,7.92390476 8.8277619,9.95328571 6.33333333,9.95328571 C5.79409524,9.95328571 5.27657143,9.85828571 4.79614286,9.68457143 L4.79614286,9.68366667 Z M15.9310476,17.141619 L7.81714286,10.6508571 C9.61942857,10.1378571 11.042619,8.71466667 11.555619,6.91238095 L18.046381,15.0262857 C17.7197619,15.9862381 16.891,16.815 15.9310476,17.141619 Z" id="Shape"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    `},
+    'album':  function() { 
+        return `
+        <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Macbook-pro-15" transform="translate(-26.000000, -630.000000)" fill="#32486C" fill-rule="nonzero">
+                    <g id="navigation/desktop/mainMenu">
+                        <g id="sections" transform="translate(0.000000, 107.000000)">
+                            <g id="section-2" transform="translate(24.000000, 342.000000)">
+                                <g id="sectionElements" transform="translate(2.000000, 49.000000)">
+                                    <g id="Group-22" transform="translate(0.000000, 132.000000)">
+                                        <g id="ic-album-24px">
+                                            <path d="M10.0833333,0.583333333 C4.83933333,0.583333333 0.583333333,4.83933333 0.583333333,10.0833333 C0.583333333,15.3273333 4.83933333,19.5833333 10.0833333,19.5833333 C15.3273333,19.5833333 19.5833333,15.3273333 19.5833333,10.0833333 C19.5833333,4.83933333 15.3273333,0.583333333 10.0833333,0.583333333 Z M10.0833333,14.3583333 C7.71783333,14.3583333 5.80833333,12.4488333 5.80833333,10.0833333 C5.80833333,7.71783333 7.71783333,5.80833333 10.0833333,5.80833333 C12.4488333,5.80833333 14.3583333,7.71783333 14.3583333,10.0833333 C14.3583333,12.4488333 12.4488333,14.3583333 10.0833333,14.3583333 Z M10.0833333,9.13333333 C9.56083333,9.13333333 9.13333333,9.56083333 9.13333333,10.0833333 C9.13333333,10.6058333 9.56083333,11.0333333 10.0833333,11.0333333 C10.6058333,11.0333333 11.0333333,10.6058333 11.0333333,10.0833333 C11.0333333,9.56083333 10.6058333,9.13333333 10.0833333,9.13333333 Z" id="Shape"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    `},
+    'song':  function() { 
+        return `
+        <svg width="19px" height="22px" viewBox="0 0 19 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Macbook-pro-15" transform="translate(-26.000000, -675.000000)" fill="#32486C" fill-rule="nonzero">
+                    <g id="navigation/desktop/mainMenu">
+                        <g id="sections" transform="translate(0.000000, 107.000000)">
+                            <g id="section-2" transform="translate(24.000000, 342.000000)">
+                                <g id="sectionElements" transform="translate(2.000000, 49.000000)">
+                                    <g id="Group-20" transform="translate(0.000000, 177.000000)">
+                                        <g id="0229-music-note">
+                                            <path d="M14.5666667,3.8 C12.8212,3.8 11.4,2.3788 11.4,0.633333333 C11.4,0.283733333 11.1162667,0 10.7666667,0 C10.4170667,0 10.1333333,0.283733333 10.1333333,0.633333333 L10.1333333,16.3387333 C9.96106667,16.2222 9.77106667,16.112 9.56586667,16.0094 C8.52213333,15.4875333 7.15033333,15.2 5.7,15.2 C4.24966667,15.2 2.87786667,15.4875333 1.83413333,16.0094 C0.651066667,16.6009333 0,17.4382 0,18.3666667 C0,19.2951333 0.651066667,20.1336667 1.83413333,20.7239333 C2.87786667,21.2458 4.24966667,21.5333333 5.7,21.5333333 C7.15033333,21.5333333 8.52213333,21.2458 9.56586667,20.7239333 C10.7489333,20.1324 11.4,19.2951333 11.4,18.3666667 L11.4,3.73286667 C12.2056,4.55493333 13.3278667,5.06666667 14.5666667,5.06666667 C16.3121333,5.06666667 17.7333333,6.48786667 17.7333333,8.23333333 C17.7333333,8.58293333 18.0170667,8.86666667 18.3666667,8.86666667 C18.7162667,8.86666667 19,8.58293333 19,8.23333333 C19,5.78866667 17.0113333,3.8 14.5666667,3.8 Z M5.7,20.2666667 C3.16286667,20.2666667 1.26666667,19.2634667 1.26666667,18.3666667 C1.26666667,17.4698667 3.16286667,16.4666667 5.7,16.4666667 C8.23713333,16.4666667 10.1333333,17.4698667 10.1333333,18.3666667 C10.1333333,19.2634667 8.23713333,20.2666667 5.7,20.2666667 Z" id="Shape"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    `},
 }

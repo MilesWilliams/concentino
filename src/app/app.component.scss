@@ -1,13 +1,14 @@
 .app-container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 }
 
 .sidebar {
     background-color: rgba(255, 255, 255, 1);
-    width: 25%;
-    max-width: 264px;
+    width: 100%;
+    max-width: 250px;
 }
 
 
@@ -15,4 +16,5 @@
 main {
     background-color: #F5F9FB;
     width: inherit;
+    padding: 0 31px;
 }

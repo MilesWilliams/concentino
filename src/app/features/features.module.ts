@@ -11,6 +11,9 @@ import { HistoryModule } from './pages/history/history.module';
 import { NewReleasesModule } from './pages/new-releases/new-releases.module';
 import { FavouritesModule } from './pages/favourites/favourites.module';
 import { RadioModule } from './pages/radio/radio.module';
+import { ArtistsModule } from './pages/artists/artists.module';
+import { AlbumsModule } from './pages/albums/albums.module';
+import { SongsModule } from './pages/songs/songs.module';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { RadioModule } from './pages/radio/radio.module';
     HistoryModule,
     NewReleasesModule,
     FavouritesModule,
-    RadioModule
+    RadioModule,
+    ArtistsModule,
+    AlbumsModule,
+    SongsModule
 
   ],
   declarations: [FeaturesComponent],

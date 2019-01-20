@@ -46,7 +46,12 @@ app.on('ready', async () => {
 	mainWindow = new BrowserWindow({
 		width: 935,
 		height: 557,
-		transparent: false
+		transparent: true,
+		vibrancy: 'light',
+		frame: false,
+		webPreferences: {
+			webSecurity: false,
+		},
 	});
 
 	mainWindow.loadURL(`http://localhost:4200`);

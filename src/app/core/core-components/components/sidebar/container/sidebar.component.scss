@@ -1,0 +1,25 @@
+:host {
+    aside {
+        padding: 31px 25px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .logo {
+        display: block;
+        width: 125px;
+        line-height: 24px;
+        margin-bottom: 50px;
+        font-family: "Open Sans";
+        color: var(--primary);
+        letter-spacing: 0.6px;
+        font-style: normal;
+    }
+}

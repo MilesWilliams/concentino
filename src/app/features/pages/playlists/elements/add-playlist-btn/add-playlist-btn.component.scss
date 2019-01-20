@@ -1,0 +1,17 @@
+:host {
+    .btn-container {
+        display: flex;
+        align-items: center;
+
+        i {
+            display: inherit;
+            margin-right: 24px;
+        }
+
+        span {
+            font-family: "Open Sans";
+            color: var(--primary);
+            letter-spacing: 0.6px;
+        }
+    }
+}

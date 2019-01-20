@@ -9,6 +9,9 @@ import { RadioComponent } from './pages/radio/container/radio.component';
 import { FeedComponent } from './pages/feed/container/feed.component';
 import { FavouritesComponent } from './pages/favourites/container/favourites.component';
 import { HistoryComponent } from './pages/history/container/history.component';
+import { AlbumsComponent } from './pages/albums/container/albums.component';
+import { ArtistsComponent } from './pages/artists/container/artists.component';
+import { SongsComponent } from './pages/songs/container/songs.component';
 
 const routes: Routes = [
   {
@@ -46,7 +49,19 @@ const routes: Routes = [
       {
         path: 'history',
         component: HistoryComponent
-      }
+      },
+      {
+        path: 'albums',
+        component: AlbumsComponent
+      },
+      {
+        path: 'artists',
+        component: ArtistsComponent
+      },
+      {
+        path: 'songs',
+        component: SongsComponent
+      },
     ]
   },
 ];

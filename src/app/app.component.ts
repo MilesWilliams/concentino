@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { CoreState } from './core/store';
 import {SidebarNavigation, ConcentinoIcons} from './core/configs/sidebar-navigation.config';
-import { LoadNavigationRoutes } from './core/core-components/sidebar/store';
+import { LoadNavigationRoutes } from './core/core-components/store';
 
 @Component({
   selector: 'app-root',

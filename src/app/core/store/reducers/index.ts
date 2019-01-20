@@ -9,7 +9,7 @@ import {
 } from '@ngrx/store';
 import * as fromRouter from '@ngrx/router-store';
 
-import * as fromNavigation from '../../core-components/sidebar/store/reducers/navigation.reducer';
+import * as fromNavigation from '../../core-components/store/reducers/navigation.reducer';
 
 import { localStorageSync, LocalStorageConfig } from 'ngrx-store-localstorage';
 
