@@ -1,5 +1,13 @@
-<concentino-page>
-    <p>
-        songs works!
-    </p>
+<concentino-page *ngIf="(files$ | async) as files">
+    <div class="list-header">
+        <span></span>
+        <span>Title</span>
+        <span>Artist</span>
+        <span>Album</span>
+    </div>
+    <ul >
+        <ng-template ngFor let-file let-i="index" [ngForOf]="files.Files">
+             <li><concentino-song [index]="formatIndex(i+1)" [song]="file"></concentino-song></li> 
+        </ng-template>
+    </ul>
 </concentino-page>

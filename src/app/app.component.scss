@@ -16,5 +16,6 @@
 main {
     background-color: #F5F9FB;
     width: inherit;
-    padding: 0 31px;
+    box-sizing: border-box;
+    overflow: scroll;
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoreComponentsModule } from './core-components/core-components.module';
+import { services } from './services';
 
 @NgModule({
   imports: [
@@ -8,6 +9,7 @@ import { CoreComponentsModule } from './core-components/core-components.module';
     CoreComponentsModule
   ],
   declarations: [],
-  exports: [CoreComponentsModule]
+  exports: [CoreComponentsModule],
+  providers: [...services]
 })
 export class CoreModule { }

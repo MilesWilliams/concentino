@@ -1,0 +1,42 @@
+:host {
+    div {
+        background-color: #fff;
+        border-bottom: 1px solid #E5EBF0;
+    }
+    a {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 5% 50% 28% 17%;
+        padding: 10px 16px;
+        box-sizing: border-box;
+    }
+
+    span {
+        font-family: "Open Sans";
+        font-size: 12px;
+        font-weight: 300;
+        // color: #A9B0C0;
+        letter-spacing: 0.6px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .img-container {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        color: #383D49;
+        letter-spacing: 0.86px;
+
+        img, .placeholder-img {
+            width: 40px;
+            height: 40px;
+            margin-right: 25px;
+        }
+
+        .placeholder-img {
+            background-color: #eee;
+        }
+
+    }
+
+}

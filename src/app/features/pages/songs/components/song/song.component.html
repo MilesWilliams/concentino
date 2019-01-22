@@ -1,0 +1,15 @@
+<div *ngIf="song" class="song-container">
+  <a>
+    <span>{{index}}</span> 
+    
+    <span class="img-container"><img *ngIf="song.AlbumPicture else placeholder" src="data:image/png;base64,{{song.AlbumPicture.Data}}" alt=""> {{song.Name}}</span> 
+    <span>{{song.Artist}}</span> 
+    <span>{{song.Album}}</span>
+
+    <ng-template #placeholder>
+      <span class="placeholder-img"></span>
+    </ng-template>
+  </a>
+</div>
+
+<!-- <pre>{{song | json}}</pre> -->

@@ -12,6 +12,7 @@ import { getActiveRoute } from '../../store/selectors/navigation.selectors';
 })
 export class PageComponent implements OnInit {
 	activeRoute$: Observable<NavItem>;
+	
 	constructor(private _store: Store<CoreState>) {
 		this.activeRoute$ = this._store.select(getActiveRoute);
 	}

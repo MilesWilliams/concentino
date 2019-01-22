@@ -1,0 +1,26 @@
+:host {
+    header {
+        height: 58vh;
+        max-height: 602px;
+        background-image: url('src/assets/images/header.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: -20px;
+
+        h1 {
+            font-family: "Open Sans";
+            font-size: 104px;
+            color: #0A101F;
+            letter-spacing: 0.39px;
+            margin: 0;
+        }
+    }
+
+    .page-contents {
+        padding: 0 31px;
+        position: relative;
+        top: -50px;
+    }
+}
