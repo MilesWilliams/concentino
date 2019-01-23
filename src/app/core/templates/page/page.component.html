@@ -1,6 +1,9 @@
 <section>
   <header *ngIf="(activeRoute$ | async) as activeRoute">
-    <h1>{{activeRoute.label}}</h1>
+    <concentino-search></concentino-search>
+    <div class="title-lockup">
+        <h1>{{activeRoute.label}}</h1>
+    </div>
   </header>
   <div class="page-contents">
     <ng-content>

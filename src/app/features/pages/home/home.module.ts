@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './container/home.component';
-import { TemplatesModule } from 'src/app/core/core-components/templates/templates.module';
+import { TemplatesModule } from 'src/app/core/templates/templates.module';
 
 @NgModule({
   imports: [

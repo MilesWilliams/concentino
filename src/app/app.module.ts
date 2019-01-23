@@ -11,6 +11,7 @@ import { environment } from 'src/environments/environment';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { HttpClientModule } from '@angular/common/http';
+import { TemplatesModule } from './core/templates/templates.module';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     StoreModule.forRoot({ CoreState: CoreStateReducer }),
 		EffectsModule.forRoot(Effects),
 		!environment.production ? StoreDevtoolsModule.instrument() : [],
-		StoreRouterConnectingModule,
+    StoreRouterConnectingModule,
+    TemplatesModule
   ],
   declarations: [
     AppComponent

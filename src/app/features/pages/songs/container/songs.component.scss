@@ -6,10 +6,12 @@
         margin-bottom: 20px;
         span {
             font-family: "Open Sans";
-            font-size: 10px;
-            color: #A9B0C0;
+            font-size: 12px;
+            color: var(--primary);
             letter-spacing: 0.5px;
             line-height: 12px;
+            opacity: 0.6;
+            -webkit-font-smoothing: antialiased;
         }
     }
     ul  {

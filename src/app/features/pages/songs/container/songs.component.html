@@ -1,4 +1,4 @@
-<concentino-page *ngIf="(files$ | async) as files">
+<ng-container *ngIf="(files$ | async) as files">
     <div class="list-header">
         <span></span>
         <span>Title</span>
@@ -10,4 +10,4 @@
              <li><concentino-song [index]="formatIndex(i+1)" [song]="file"></concentino-song></li> 
         </ng-template>
     </ul>
-</concentino-page>
+</ng-container>

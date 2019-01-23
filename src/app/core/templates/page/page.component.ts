@@ -3,7 +3,8 @@ import { Store } from '@ngrx/store';
 import { CoreState } from 'src/app/core/store';
 import { Observable } from 'rxjs';
 import { NavItem } from 'src/app/core/interfaces/sidebar-nav.interface';
-import { getActiveRoute } from '../../store/selectors/navigation.selectors';
+import { getActiveRoute } from '../../core-components/store/selectors/navigation.selectors';
+
 
 @Component({
 	selector: 'concentino-page',

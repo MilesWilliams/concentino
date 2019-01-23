@@ -8,13 +8,19 @@
         background-size: cover;
         position: relative;
         top: -20px;
+        display: flex;
+        align-items: center;
+        padding: 0 31px;
 
-        h1 {
-            font-family: "Open Sans";
-            font-size: 104px;
-            color: #0A101F;
-            letter-spacing: 0.39px;
-            margin: 0;
+        .title-lockup {
+            h1 {
+                font-family: "Open Sans";
+                font-size: 104px;
+                color: #0A101F;
+                letter-spacing: 0.39px;
+                margin: 0;
+            }
+
         }
     }
 
