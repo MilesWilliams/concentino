@@ -14,6 +14,11 @@ import { RadioModule } from './pages/radio/radio.module';
 import { ArtistsModule } from './pages/artists/artists.module';
 import { AlbumsModule } from './pages/albums/albums.module';
 import { SongsModule } from './pages/songs/songs.module';
+import { StoreModule } from '@ngrx/store';
+import { ConcentinoStateReducer } from './store/reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { effects } from './store/effects';
+import { SongsLoadedGuard } from './pages/songs/guards/onLoad.guard';
 
 
 @NgModule({
@@ -30,10 +35,14 @@ import { SongsModule } from './pages/songs/songs.module';
     RadioModule,
     ArtistsModule,
     AlbumsModule,
-    SongsModule
+    SongsModule,
+
+    StoreModule.forFeature('ConcentinoState', ConcentinoStateReducer),
+    EffectsModule.forFeature(effects),
 
   ],
   declarations: [FeaturesComponent],
   exports: [FeaturesComponent],
+  providers: [SongsLoadedGuard]
 })
 export class FeaturesModule { }

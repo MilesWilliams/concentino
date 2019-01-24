@@ -12,6 +12,7 @@ import { HistoryComponent } from './pages/history/container/history.component';
 import { AlbumsComponent } from './pages/albums/container/albums.component';
 import { ArtistsComponent } from './pages/artists/container/artists.component';
 import { SongsComponent } from './pages/songs/container/songs.component';
+import { SongsLoadedGuard } from './pages/songs/guards/onLoad.guard';
 
 const routes: Routes = [
   {
@@ -60,7 +61,8 @@ const routes: Routes = [
       },
       {
         path: 'songs',
-        component: SongsComponent
+        component: SongsComponent,
+        canActivate: [SongsLoadedGuard]
       },
     ]
   },

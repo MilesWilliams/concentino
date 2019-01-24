@@ -6,7 +6,7 @@
         <span>Album</span>
     </div>
     <ul >
-        <ng-template ngFor let-file let-i="index" [ngForOf]="files.Files">
+        <ng-template ngFor let-file let-i="index" [ngForOf]="files">
              <li><concentino-song [index]="formatIndex(i+1)" [song]="file"></concentino-song></li> 
         </ng-template>
     </ul>
